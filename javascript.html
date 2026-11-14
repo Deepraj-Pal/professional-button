@@ -1,0 +1,45 @@
+<!doctype html>
+     <html>
+                  <head>
+                  <title>Webpage</title>
+                  <style>
+                   button{
+                                background-color:Royalblue;
+                                color:white;
+                                padding: 12px 15px;
+                                font-size:16px;
+                                font-weight:600;
+                                letter-spacing:0.5px;
+                                border:none;
+                                border-radius:8px;
+                                cursor:pointer;
+                                box-shadow: 0 4px 10px  lightgrey;
+                                transition: all 0.3s ease;              
+                                }
+         button:hover{
+                                background-color: mediumblue;
+                                transform: translateY(-2px);
+                                box-shadow: 0 8px 10px silver;
+                               }
+        button:active{
+                               background-color: darkblue;
+                               transform: translateY(0);
+                               }
+                     body{
+                                background-color:black;
+                                color: whitesmoke;
+                                font-family: sans-serif;
+                               }
+                  </style>
+                  </head>
+       <body>
+       <h1 id="heading">Hello Friends</h1>
+       <button onclick="changeText()">Click me</button>
+       <script>
+        function changeText(){
+        document.getElementById("heading").textContent = 
+        "welcome to javascript";
+            }
+       </script>
+       </body>
+       </html>
